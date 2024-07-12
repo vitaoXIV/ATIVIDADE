@@ -69,10 +69,86 @@ echo retorno($p);
 echo "<br>";
 
 //questao 7
-
-$senha = 
+echo "<br>";
+$senha = 12;
 function verificação(){
      if(ctype_lower('minusucula')){
         
      }
+}
+
+
+
+//questao 8//
+
+$idade = 1;  //ternario usa "?" e ":"
+
+echo  $idade >= 18 ? 'Maior de Idade' : 'Menor de idade'; //operador ternario precisa de variavel, o item verdadeiro e o falso//
+
+echo "<br>";
+
+//questao 9//
+echo "<br>";
+
+$alunos = array(
+    'Junior' => 9.5,
+    'Maria' => 10,
+    'Paulo' => 6,
+    'Ana' => 8.5,
+    'Pedro' => 5.5,
+    'Júlia' => 6.5
+);
+
+foreach($alunos as $aprovados => $notas){
+   
+    echo "<br>";
+    if($notas >= 7){
+        echo "quem passou foi $aprovados com $notas";
+    }
+    
+};
+
+//questao 10//
+
+
+ $raio = 5;
+$calcraio =  pi() * ($raio ** 2);
+
+function area() {
+    pi() * $calcraio;
+};
+    echo "raio é $raio, area é $calcraio";
+    echo "<br>";
+
+//questao 11//
+echo "<br>";
+
+$par = [];
+$numero = 14;
+function parametro($par) {
+    for($numero = 0; $numero <=13; $numero++){
+        if($numero % 2 == 0){
+            $par[] = $numero;
+        }
+        
+    }
+    foreach($par as $key => $pares ) {
+        echo $pares;
+    }
+}
+return parametro($par);
+echo "<br>";
+echo "entrada = $numero";
+
+
+//questao 12//
+
+
+
+//qeustao 13//
+
+$string = "arara"
+
+function palindromo() {
+    
 }
